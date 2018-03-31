@@ -1,0 +1,28 @@
+<div class="posts-page">
+    {% for edge in edges %}
+    <a href="#/post/{{ edge.node.number }}" class="node-item">
+        <h2>{{ edge.node.title }}</h2>
+        <p>
+            <span href="{{ edge.node.author.url }}" class="author" target="_blank">
+                <img src="{{ edge.node.author.avatarUrl }}" alt="">
+                {{ edge.node.author.login }}
+            </span>
+            <span class="time">{{ util.format(edge.node.updatedAt) }}</span>
+            {% for label in edge.node.labels.edges %}
+            <span class="label" style="background: #{{ label.node.color }}">{{ label.node.name }}</span>
+            {% endfor %}
+        </p>
+    </a>
+    {% endfor %}
+
+    {% if pageInfo %}
+    <ul class="pagination">
+        {% if pageInfo.hasPreviousPage %}
+        <li><a href="#/home/before/{{ pageInfo.startCursor }}">上一页</a></li>
+        {% endif %}
+        {% if pageInfo.hasNextPage %}
+        <li><a href="#/home/after/{{ pageInfo.endCursor }}">查看往期的文章</a></li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</div>

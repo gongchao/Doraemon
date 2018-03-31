@@ -1,0 +1,32 @@
+# 网站标题
+title: GongChao
+
+# 网址
+url: https://blog.dian.io
+
+# 博客内容来源，请填写你的 blog 仓库
+repository: gongchao/blog
+
+# 设置哪些用户的 issues 可以显示出来
+authors:
+- Gongchao
+
+# token
+# 如果直接将 token 传到 github token 会被清空
+# 如果你打算传到 github 的话，请在 token 加入 # 进行混淆，前端发起请求的时候会将 # 去掉
+token: 8ab2#3162061a#e2e7ce7a1c8#508a8a#8c073738d6b
+
+# 日期格式
+date_format: YYYY-MM-DD
+
+# 时间格式
+time_format: H:mm:ss
+
+# 每页显示的文章量
+per_page: 10
+
+# 当前主题名称
+theme: default
+
+# 输出文件夹
+output_dir: ./docs

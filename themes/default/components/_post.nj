@@ -1,0 +1,16 @@
+<div class="post-page">
+    <h1 class="title">{{ title }}</h1>
+    <p>
+        <a href="{{ author.url }}" class="author" target="_blank">
+            <img src="{{ author.avatarUrl }}" alt="">
+            {{ author.login }}
+        </a>
+        <span class="time">{{ util.format(edge.node.updatedAt) }}</span>
+        {% for label in labels.edges %}
+        <span class="label" style="background: #{{ label.node.color }}">{{ label.node.name }}</span>
+        {% endfor %}
+    </p>
+    <div class="content markdown-body">
+        {{ bodyHTML | safe }}
+    </div>
+</div>

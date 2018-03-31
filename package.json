@@ -1,0 +1,34 @@
+{
+  "name": "doraemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel-node ./node_modules/.bin/gulp --gulpfile ./scripts/build.js"
+  },
+  "keywords": [],
+  "author": "gongchao",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "js-yaml": "^3.11.0",
+    "moment": "^2.22.0",
+    "nunjucks": "^3.1.2",
+    "nunjucks-loader": "^3.0.0",
+    "ramda": "^0.25.0",
+    "webpack": "^4.4.1"
+  }
+}

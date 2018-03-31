@@ -1,0 +1,146 @@
+
+html {
+    min-height: 100%;
+    color: #222;
+    background: linear-gradient(#e9ffed,#fff) repeat-x top left;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.node-item {
+    display: block;
+    margin-bottom: 30px
+}
+
+.node-item h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #222;
+}
+
+.node-item p {
+    margin: 0
+}
+
+.node-item .edge,
+.time {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #4fa949;
+    vertical-align: middle;
+}
+
+.post-page .title {
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.author {
+    margin-right: 10px;
+    color: #4fa949;
+}
+
+.author img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.label {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 3px 5px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.girl {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -650px;
+    width: 185px;
+    height: 290px;
+    background: url(../img/girl.png) no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 70px;
+    background: #fff;
+}
+
+header a {
+    display: inline-block;
+    padding: 0 35px;
+    color: #4fa949;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+header a:first-child {
+    background: #e9ffed;
+}
+
+.pagination {
+    padding: 0;
+    list-style: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.pagination li a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    background: #4fa949;
+}
+
+.pagination li a:hover {
+    background: #64C35F;
+}
+
+.loading {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.loading::before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    margin-top: -3px;
+    margin-left: -30px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/loading.gif') no-repeat;
+    background-size: cover;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14p;    
+    color: #4fa949;
+}
+
+footer a {
+    color: #4fa949;
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading...</title>
+    {# 通过自有函数输入HTML头部信息 #}
+    {{ util.header() | safe }}
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{{ url }}">首页</a>
+            <a href="http://github.com/{{ repository }}" target="_blank">Github</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            {# <div class="text-center JS-bio-text"></div> #}
+            <div id="page">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <span>@dian.io</span>
+            <span>Powered by <a href="https://github.com/gongchao/Doraemon" target="_blank">Doraemon</a>.</span>
+        </div>
+    </footer>
+    <span class="girl"></span>
+    {{ util.footer() | safe }}
+</body>
+</html>
