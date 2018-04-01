@@ -2,14 +2,14 @@
 title: GongChao
 
 # 网址
-url: https://blog.dian.io
+url: http://localhost:5000
 
 # 博客内容来源，请填写你的 blog 仓库
-repository: gongchao/blog
+repository: gongchao/Doraemon
 
 # 设置哪些用户的 issues 可以显示出来
 authors:
-- Gongchao
+- Doraemon
 
 # token
 # 如果直接将 token 传到 github token 会被清空

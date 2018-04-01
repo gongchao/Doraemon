@@ -10,6 +10,7 @@ import rename from 'gulp-rename'
 import webpack from 'webpack'
 import webpackConfig from '../webpack.config'
 import gutil from 'gulp-util'
+import server from 'serve'
 
 const rootPath = path.join(__dirname, '../');
 
@@ -60,3 +61,14 @@ gulp.task('compile', () => {
 })
 
 gulp.task('default', ['clean', 'theme', 'compile'])
+
+if (process.env.NODE_ENV === 'development') {
+    server(paths.output, {
+        port: 5000,
+    })
+
+    gulp.watch([
+        path.join(rootPath, 'src/**/*'),
+        path.join(rootPath, 'themes/**/*'),
+    ], ['theme', 'compile'])
+}
